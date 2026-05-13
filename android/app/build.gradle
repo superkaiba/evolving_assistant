@@ -1,0 +1,32 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "dev.evolvingassistant.shell"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "dev.evolvingassistant.shell"
+        minSdk 26
+        targetSdk 35
+        versionCode 1
+        versionName "0.1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(System.getenv("SEA_ANDROID_KEYSTORE") ?: "debug-release.keystore")
+            storePassword System.getenv("SEA_ANDROID_KEYSTORE_PASSWORD") ?: "selfevolving"
+            keyAlias System.getenv("SEA_ANDROID_KEY_ALIAS") ?: "selfevolving"
+            keyPassword System.getenv("SEA_ANDROID_KEY_PASSWORD") ?: "selfevolving"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+}

@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Web build output
+dist/
+
+# Local assistant runtime data
+.assistant/
+
+# Android and local toolchain output
+.android-sdk/
+.tools/
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+
+# Local signing material and generated packages
+android/app/*.keystore
+*.apk
+*.aab
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs and editor files
+*.log
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,31 @@
+export interface OrchestratorCapability {
+  id: string;
+  title: string;
+  description: string;
+  createdAt: string;
+  sourceRequest: string;
+}
+
+export const orchestratorCapabilities: OrchestratorCapability[] = [
+  {
+    "id": "seed-evolution-loop",
+    "title": "Recoverable evolution loop",
+    "description": "Creates visible task steps, snapshots source files, runs checks, records versions, and exposes rollback.",
+    "createdAt": "initial",
+    "sourceRequest": "Initial MVP scaffold"
+  },
+  {
+    "id": "ver_mp362m36_kautxc",
+    "title": "A daily planning workspace and add an orchestrator capability for ev",
+    "description": "Source-backed orchestrator capability generated from the request: Build a daily planning workspace and add an orchestrator capability for evolving planner workflows.",
+    "createdAt": "2026-05-12T21:52:46.680Z",
+    "sourceRequest": "Build a daily planning workspace and add an orchestrator capability for evolving planner workflows."
+  },
+  {
+    "id": "ver_mp36fbtz_gc0lrz",
+    "title": "The app workspace into an Android install checklist and add an orche",
+    "description": "Source-backed orchestrator capability generated from the request: Update the app workspace into an Android install checklist and add an orchestrator capability for Android runtime update management.",
+    "createdAt": "2026-05-12T22:02:39.914Z",
+    "sourceRequest": "Update the app workspace into an Android install checklist and add an orchestrator capability for Android runtime update management."
+  }
+];

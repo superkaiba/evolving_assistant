@@ -28,6 +28,10 @@ npm run smoke
 
 ## Android Shell
 
+Permanent latest-download QR page:
+
+https://superkaiba.github.io/evolving_assistant/
+
 Install Android build tools once:
 
 ```bash

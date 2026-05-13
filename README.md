@@ -28,7 +28,7 @@ npm run smoke
 
 ## Android Shell
 
-Permanent latest-download QR page:
+Permanent APK download and QR page:
 
 https://superkaiba.github.io/evolving_assistant/
 

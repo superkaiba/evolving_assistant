@@ -18,6 +18,7 @@ android/local.properties
 # Local signing material and generated packages
 android/app/*.keystore
 *.apk
+!docs/app-release.apk
 *.aab
 
 # Environment and secrets
